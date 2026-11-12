@@ -163,7 +163,7 @@ body.touch #touch.on{display:block}
     <div class="card home">
       <div class="mk"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#ff6f61"/><path d="M20 7c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z" fill="#fff"/><path d="M16 24a4 4 0 0 0 4 4" stroke="#27c4d4" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><h1 id="hTitle"></h1></div>
       <p id="hSub"></p>
-      <button class="btn" id="homeStart">ابدأ الرحلة</button>
+      <button class="btn" id="homeStart">ابدأ المغامرة</button>
       <div class="hint">الحركة بالأسهم، والقفز بمفتاح المسافة. وعلى الأجهزة اللوحية استخدم الأزرار على الشاشة.</div>
     </div>
   </div>
@@ -182,7 +182,7 @@ body.touch #touch.on{display:block}
    ========================================================== */
 const SETTINGS={
   title:'رحلة المنجزات العمانية',
-  subtitle:'انطلق مع ميريو في رحلة لاكتشاف المنجزات الحضارية العمانية 🇴🇲',
+  subtitle:'انطلق مع مَزُون في مغامرة لاكتشاف المنجزات الحضارية العمانية 🇴🇲',
   course:'الدراسات الاجتماعية · الصف الثامن',
   colors:{main:'#d9822b',accent:'#0f5c5a',card:'#fffaf0',ok:'#2e9e5b',bad:'#d6455d',hud:'#0e2f33'},
   questions:[
@@ -433,7 +433,7 @@ function startStation(si){
   S.mode='play';Q=null;S.bq=0;S.qa=0;
   $('#hud').classList.add('on');$('#touch').classList.add('on');
   setHUD();requestAnimationFrame(calcTarget);
-  notify('ابدأ الرحلة',CONFIG.stations[si].name,'station',2600);
+  notify('ابدأ المغامرة',CONFIG.stations[si].name,'station',2600);
   if(si===0)notify('طريقة اللعب','اجمع العملات، واقفز لتضرب كتل «؟» بالرأس فتظهر الأسئلة، وتجاوز الحفر والعقبات حتى بوابة السؤال الأخير','info',3600);
 }
 function newGame(){S={mode:'play',si:0,points:0,coins:0,hearts:CONFIG.hearts,gateOK:[],iris:0,irisDir:1};startStation(0)}
