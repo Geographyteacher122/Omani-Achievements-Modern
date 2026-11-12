@@ -433,7 +433,7 @@ function startStation(si){
   S.mode='play';Q=null;S.bq=0;S.qa=0;
   $('#hud').classList.add('on');$('#touch').classList.add('on');
   setHUD();requestAnimationFrame(calcTarget);
-  notify('ابدأ المغامرة',CONFIG.stations[si].name,'station',2600);
+  notify('ابدأ المغامرة','','station',2600);
   if(si===0)notify('طريقة اللعب','اجمع العملات، واقفز لتضرب كتل «؟» بالرأس فتظهر الأسئلة، وتجاوز الحفر والعقبات حتى بوابة السؤال الأخير','info',3600);
 }
 function newGame(){S={mode:'play',si:0,points:0,coins:0,hearts:CONFIG.hearts,gateOK:[],iris:0,irisDir:1};startStation(0)}
